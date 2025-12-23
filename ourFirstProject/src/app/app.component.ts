@@ -11,7 +11,7 @@ import { postsData } from './shared/consts/posts';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'I love Angular';
+  title = 'I love Angular = Task -> Card , Table , List';
   skills :Array<string>=['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Angular'];
   hobbies:Array<string>=['Reading', 'Traveling', 'Gaming', 'Cooking'];
 
