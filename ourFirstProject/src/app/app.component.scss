@@ -1,0 +1,33 @@
+
+.postCard{
+    h3{
+        height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.postCard {
+  background-color: rgba(255, 255, 255, 0.7); /* white with transparency */
+  border: none;
+}
+
+.postCard {
+  transition: all 0.3s ease;
+}
+
+.postCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.mat-raised-button {
+  transition: all 0.3s ease;
+}
+
+.mat-raised-button:hover {
+  transform: scale(1.05);
+}

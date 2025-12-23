@@ -1,0 +1,99 @@
+<h1 class="bg-primary p-4 text-white">
+  {{ title }}
+</h1>
+
+
+<div class="Container">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let post of postsArr" >
+      <div class="postCard card  h-100  mt-5">
+        <div class="card-header">
+          <h3 class="mb-0 text-danger"><b>{{post.title}}</b></h3>
+        </div>
+        <div class="card-body">
+          <p class="mb-0">{{post.body}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button mat-raised-button color="primary">Edit</button>
+          <button mat-raised-button color="warn">Remove</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="Container p-4  ">
+  <div class="row ">
+    <div class="col-12">
+      <table class="table table-bordered ">
+        <thead class="bg-warning">
+          <tr>
+            <th>Sr No </th>
+            <th>Name </th>
+            <th>Location</th>
+            <th>Employees </th>
+            <th>Edit </th>
+            <th>Remove </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let com of comArr; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{com.name}}</td>
+            <td>{{com.location}}</td>
+            <td>{{com.employees}}</td>
+            <td> <button mat-raised-button color="primary">Edit</button></td>
+            <td> <button mat-raised-button color="warn">Remove</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<div class="Container p-4  ">
+  <div class="row ">
+    <div class="col-12">
+      <table class="table table-bordered ">
+        <thead class="bg-primary">
+          <tr class="bg-danger">
+            <th>Sr No </th>
+            <th>First Name </th>
+            <th>Age</th>
+            <th>Cousre </th>
+            <th>Edit </th>
+            <th>Remove </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let std of stdArr; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.age}}</td>
+            <td>{{std.course}}</td>
+            <td> <button mat-raised-button color="primary">Edit</button></td>
+            <td> <button mat-raised-button color="warn">Remove</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="Container">
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <li *ngFor="let s of skills" class="list-group-item"> I love {{s}}</li>
+
+        <li *ngFor="let h of hobbies" class="list-group-item"> I love {{h}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
